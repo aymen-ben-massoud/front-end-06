@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Outfit:wght@100;200;400;600;900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 600px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+
+}
+
+.cardone {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: hsl(263, 55%, 52%);
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(0, 0%, 81%);
+  
+}
+.cardtwo {
+  grid-area: 1 / 3 / 2 / 4;
+  padding: 5%;
+  background-color:  hsl(217, 19%, 35%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(0, 0%, 81%);
+}
+.cardthree {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 5%;
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(0, 0%, 81%);
+}
+.cardfor {
+  grid-area: 2 / 2 / 3 / 4;
+  padding: 5%;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(0, 0%, 81%);
+}
+.horizontal {
+  grid-area: 1 / 4 / 3 / 5;
+  background-color:  hsl(0, 0%, 100%);
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(0, 0%, 81%);
+}
+
+.flexone,.flextwo,.flexthree,.flexfor,.flexhorizontal{
+    display: flex;
+    align-items: center;
+}
+img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+   
+}
+.textone,.texttwo,.texthree,.textfour,.textfive {
+   
+   color:  hsl(0, 0%, 81%);
+   font-weight: 500;
+   font-size: 8px;
+  margin-left: 5%;
+}
+.textone h1,.texttwo h1,.textfour h1 {
+  color:  hsl(210, 46%, 95%);
+} 
+.texthree h1,.textfive h1 {
+    color: hsl(217, 19%, 35%);
+}
+h2{
+    color: hsl(210, 46%, 95%);
+    margin: 2%;
+    font-weight: 500;
+}
+.cardthree h2,.horizontal h2{
+    color: hsl(219, 29%, 14%) ;
+    margin-top: 10%;
+    margin-bottom: 10%;
+} 
+.cardtwo h2 {
+    margin: 7%;
+
+}
+.horizontal:last-child{
+    color: hsl(217, 19%, 35%);
+    line-height: 20px;
+}
+.pep{
+
+    color: hsl(217, 19%, 35%);  
+    line-height: 20px;
+}
+.cardfor p {
+    color:hsl(217, 19%, 35%); 
+}
+.cardone p{
+    color:  hsl(0, 0%, 81%);
+ }
+ .cardtwo p{
+     
+     color: hsl(0, 0%, 81%);
+ }
+ @media only screen and (max-width: 375px){
+     .container{
+      
+      
+        
+ }
