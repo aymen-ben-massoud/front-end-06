@@ -128,6 +128,25 @@ svg{
     
   
 }
- .cardone h2{
-   z-index: 7;
+.cardone h2{
+  opacity: 0.95; 
  }
+@media only screen and (max-width: 375px){
+
+ 
+ .container {
+  position: absolute;
+ width: 350px;
+margin: 40px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+
+}
+svg{
+  position: absolute;
+  left: 60%;
+  top: 1%;
+
+
+}}
